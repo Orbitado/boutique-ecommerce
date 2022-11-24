@@ -1,0 +1,5 @@
+# Ignora la configuración del Prepros
+
+prepros.cfg
+prepros-6.config
+prepros.config
