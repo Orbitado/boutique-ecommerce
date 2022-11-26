@@ -7,7 +7,7 @@
 .header-nav .nav-general::after {
   display: block;
   content: "";
-  border: 0.1px solid #707070;
+  border: 0.1px solid #EEEEEE;
 }
 .header-nav .nav-general ul .nav-item {
   list-style: none;
@@ -71,7 +71,7 @@
   border: none;
   color: #FF4500;
 }
-.main-home .featured .featured__description .description .button-content .amount #count {
+.main-home .featured .featured__description .description .button-content .amount #value {
   margin: 0;
   color: #373737;
   font-weight: bold;

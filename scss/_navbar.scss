@@ -3,7 +3,7 @@
         &::after {
             display: block;
             content: "";
-            border: .1px solid map-get($color, "secondary" );
+            border: .1px solid map-get($color, "gray" );
         }
         ul {
             .nav-item {
