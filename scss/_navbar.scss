@@ -22,6 +22,18 @@
                 .cart {
                     color: map-get($color, "primary" );
                     font-size: map-get($f-size, "heading" );
+                    position: relative;
+                    .cart-value {
+                        position: absolute;
+                        top: 30%;
+                        left: 60%;
+                        font-size: 16px;
+                        background-color: map-get($color, "black");
+                        border: 1px solid transparent;
+                        border-radius: 5rem;
+                        margin: 0px;
+                        padding: 2px;
+                    }
                 }
             }
             .nav-item .active {

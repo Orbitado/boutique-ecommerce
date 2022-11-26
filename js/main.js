@@ -2,6 +2,10 @@
 const restar = document.getElementById("rest");
 const sumar = document.getElementById("plus");
 const value = document.getElementById("value");
+// CART COUNTER
+const cartValue = document.getElementById("cart-value");
+// CARRITO
+const cart = document.getElementById("cart");
 
 let numero = 0;
 
@@ -20,6 +24,7 @@ restar.addEventListener("click", ()=>{
 // BUTTON ADD TO CART
 const addCart = document.getElementById("add-cart");
 addCart.addEventListener("click", ()=>{
+    cartValue.innerHTML = numero;
     for (let i = 0; i < 3; i++) {
         if (i < 1) {
             let nombre = prompt("Por favor, ingresa tu nombre");
@@ -28,10 +33,9 @@ addCart.addEventListener("click", ()=>{
             let compra = prompt("¿Qué quieres comprar?");
             console.log("compra");
         } else if (i < 3) {
-            let confirmacion = confirm("¿Deseas dirigirte a la compra?");
-            if (confirmacion == true) {
-                location.reload();
-            }
+            let confirmacion = confirm("¿Deseas añadir esta cantidad al carrito?");
+
         }
     }
-})
+});
+

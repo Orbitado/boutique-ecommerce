@@ -26,6 +26,18 @@
 .header-nav .nav-general ul .nav-item .cart {
   color: #FF4500;
   font-size: 28px;
+  position: relative;
+}
+.header-nav .nav-general ul .nav-item .cart .cart-value {
+  position: absolute;
+  top: 30%;
+  left: 60%;
+  font-size: 16px;
+  background-color: #373737;
+  border: 1px solid transparent;
+  border-radius: 5rem;
+  margin: 0px;
+  padding: 2px;
 }
 .header-nav .nav-general ul .nav-item .active {
   color: #373737;
@@ -101,10 +113,11 @@
   font-size: 13px;
   color: #707070;
 }
-.footer-home .services .message::after {
+.footer-home .services .message:not(.last):after {
   display: block;
   content: "";
-  border: 1px solid blue;
+  border: 1px solid #707070;
+  height: 30px;
 }
 .footer-home .copyright {
   margin-top: 10px;
