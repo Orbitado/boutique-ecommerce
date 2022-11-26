@@ -1,0 +1,38 @@
+.header-nav {
+    .nav-general {
+        &::after {
+            display: block;
+            content: "";
+            border: .1px solid map-get($color, "secondary" );
+        }
+        ul {
+            .nav-item {
+                list-style: none;
+                padding: 15px 20px 0 0px;
+                a {
+                    text-decoration: none;
+                    color: map-get($color, "secondary");
+                    font-size: map-get($f-size, "descriptions");
+                }
+                .logo {
+                    font-size: map-get($f-size, "heading" );
+                    font-weight: 900;
+                    color: map-get($color, "primary");
+                }
+                .cart {
+                    color: map-get($color, "primary" );
+                    font-size: map-get($f-size, "heading" );
+                }
+            }
+            .nav-item .active {
+                    color: map-get($color, "black");
+                    font-weight: 600;
+            }
+            .nav-item .active::after {
+                display: block;
+                content: "";
+                border: 1px solid map-get($color, "primary");
+            }
+        }
+    }
+}

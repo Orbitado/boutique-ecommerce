@@ -1,0 +1,102 @@
+.main-home {
+    min-height: 82vh;
+    .featured {
+        .featured__img {
+            .tshirt {
+                width: 300px;
+                height: 300px;
+                overflow: hidden;
+                img {
+                    width: 300px;
+                }
+            }
+        }
+        .featured__description {
+            .description {
+                h3 {
+                    color: map-get($color, "primary");
+                    font-size: map-get($f-size, "descriptions" );
+                    font-weight: bold;
+                }
+                h2 {
+                    color: map-get($color, "black" );
+                    font-weight: bold;
+                }
+                p {
+                    color: map-get($color, "secondary" );
+                }
+                // BOTON DE CONTADOR
+                .button-content {
+                    .amount {
+                        background-color: map-get($color, "gray");
+                        padding: 10px 20px;
+                        gap: 30px;
+                        border: 1px solid transparent;
+                        border-radius: map-get($buttons, "counter");
+                        #rest {
+                            border: none;
+                            color: map-get($color, "primary");
+                        }
+                        #count {
+                            margin: 0;
+                            color: map-get($color, "black");
+                            font-weight: bold;
+                        }
+                        #plus {
+                            @extend #rest;
+                        }                   
+                    }
+                    // BOTON DE AÑADIR AL CARRITO
+                    .add-amount {
+                        .add-cart {
+                            background-color: map-get($color, "primary");
+                            border: .5px solid transparent;
+                            border-radius: map-get($buttons, "add-cart");
+                            i {
+                                @extend p;
+                            }
+                            p {
+                                color: map-get($color, "white");
+                                font-size: 18px;
+                                margin: 0px;
+                                padding: 8px 10px;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer-home {
+    .services {
+        .message {
+            i {
+                color: map-get($color, "primary" );
+            }
+            .text {
+                h4 {
+                    font-weight: bold;
+                    color: map-get($color, "secondary");
+                    font-size: map-get($f-size, "secondary" );
+                }
+                p {
+                    font-size: 13px;
+                    color: map-get($color, "secondary" );
+                }
+            }
+        }
+        .message::after {
+            display: block;
+            content: "";
+            border: 1px solid blue;
+        }
+    }
+    .copyright {
+        margin-top: 10px;
+        color: map-get($color, "secondary" );
+        font-size: 12px;
+    }
+}
