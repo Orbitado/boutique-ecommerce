@@ -18,7 +18,7 @@
     <header class="header-nav">
         <nav class="nav-general container">
             <ul class="d-flex justify-content-between flex-wrap align-items-center p-0">
-                <li class="nav-item">
+                <li class="logo">
                     <a class="logo" href="index.html">La Boutique de la T</a>
                 </li>
                 <li class="nav-item">
@@ -33,9 +33,12 @@
                 <li class="nav-item">
                     <a href="#">Contacto</a>
                 </li>
-                <li class="nav-item">
-                    <a class="cart" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <li class="nav-item cart" id="cart">
+                    <a class="cart" href="#"><i class="fa-solid fa-cart-shopping"></i><p class="cart-value" id="cart-value">0</p></a>
                 </li>
+                <button class="toggle" id="nav-toggle">
+                        <i class="fa-solid fa-bars"></i>
+                </button>
             </ul>
         </nav>
     </header>
@@ -90,7 +93,7 @@
                 </div>
             </div>
             <!-- SEGURIDAD -->
-            <div class="message d-flex justify-content-center align-items-center gap-4">
+            <div class="message last d-flex justify-content-center align-items-center gap-4">
                 <i class="fa-solid fa-lock fs-1 icon"></i>
                 <div class="text">
                     <h4 class="m-0">COMPRÁ CON SEGURIDAD</h4>

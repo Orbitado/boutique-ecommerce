@@ -1,4 +1,13 @@
 .header-nav {
+    a {
+        text-decoration: none;
+        color: map-get($color, "secondary");
+        font-size: map-get($f-size, "descriptions");
+    }
+    li {
+        list-style: none; 
+        padding: 15px 20px 0 0px;
+    }
     .nav-general {
         &::after {
             display: block;
@@ -6,28 +15,63 @@
             border: .1px solid map-get($color, "gray" );
         }
         ul {
+            .logo {
+                font-size: map-get($f-size, "heading" );
+                font-weight: 900;
+                color: map-get($color, "primary");
+            }
+            // ELEMENTO DE JS
+            .toggle {
+                background: none;
+                border: none;
+                color: map-get($color, "primary");
+                font-size: map-get($f-size, "heading");
+
+                display: none;
+            }
+
+            .toggle.active {
+                background: none;
+                border: none;
+                color: map-get($color, "primary");
+                font-size: map-get($f-size, "heading");
+                padding-top: 15px;
+
+                display:block;
+            }
+
             .nav-item {
-                list-style: none;
-                padding: 15px 20px 0 0px;
                 a {
                     text-decoration: none;
                     color: map-get($color, "secondary");
                     font-size: map-get($f-size, "descriptions");
                 }
-                .logo {
-                    font-size: map-get($f-size, "heading" );
-                    font-weight: 900;
-                    color: map-get($color, "primary");
-                }
                 .cart {
                     color: map-get($color, "primary" );
                     font-size: map-get($f-size, "heading" );
+                    position: relative;
+                    .cart-value {
+                        position: absolute;
+                        top: 30%;
+                        left: 60%;
+                        font-size: 16px;
+                        background-color: map-get($color, "black");
+                        border: 1px solid transparent;
+                        border-radius: 5rem;
+                        margin: 0px;
+                        padding: 2px;
+                    }
                 }
             }
             .nav-item .active {
                     color: map-get($color, "black");
                     font-weight: 600;
             }
+            // ELEMENTO DE JS
+            .nav-item .inactive {
+                display: none;
+            }
+
             .nav-item .active::after {
                 display: block;
                 content: "";
