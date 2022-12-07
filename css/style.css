@@ -1,3 +1,4 @@
+/* MIXIN MEDIA QUERY */
 * {
   margin: 0;
   padding: 0;
@@ -73,7 +74,7 @@
 }
 
 .main-home {
-  min-height: 82vh;
+  min-height: 77vh;
 }
 .main-home .featured .featured__img .tshirt {
   width: 300px;
@@ -135,12 +136,6 @@
 .footer-home .services .message .text p, .footer-home .services .message .text .main-home .featured .featured__description .description .button-content .add-amount .add-cart i, .main-home .featured .featured__description .description .button-content .add-amount .add-cart .footer-home .services .message .text i {
   font-size: 13px;
   color: #707070;
-}
-.footer-home .services .message:not(.last):after {
-  display: block;
-  content: "";
-  border: 1px solid #707070;
-  height: 30px;
 }
 .footer-home .copyright {
   margin-top: 10px;

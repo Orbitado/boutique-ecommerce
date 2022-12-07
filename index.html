@@ -44,19 +44,19 @@
     </header>
     <!-- MAIN SECTION -->
     <main class="main-home container d-flex justify-content-center align-items-center align-content-center">
-        <section class="featured d-flex justify-content-center align-items-center gap-5">
+        <section class="featured d-flex justify-content-center align-items-center gap-5 row">
             <!-- IMG BEST PRODUCTS -->
-            <article class="featured__img">
-                <div class="tshirt">
+            <article class="featured__img col-lg-4 col-md-4 col-12">
+                <div class="tshirt m-auto">
                     <img src="assets/tshirt.jpg" alt="">
                 </div>
             </article>
             <!-- DESCRIPTION -->
-            <article class="featured__description w-50">
-                <div class="description">
+            <article class="featured__description w-50 col-lg-4 col-md-4 col-12">
+                <div class="description text-center text-md-start text-lg-start">
                     <h3>La Boutique de la T</h3>
                     <h2>Remera de Egresados Promoción 2023</h2>
-                    <p>Representando los colores del colegio, egresados del 2023, contaron con nosotros para elegir el diseño de la misma. </p>
+                    <p class="d-none d-md-block d-lg-block">Representando los colores del colegio, egresados del 2023, contaron con nosotros para elegir el diseño de la misma. </p>
                     <div class="button-content d-flex gap-3 align-items-center">
                         <div class="amount d-flex">
                             <button id="rest" onclick=""><i class="fa-solid fa-minus"></i></button>
@@ -66,7 +66,8 @@
                         <div class="add-amount">
                             <button class="add-cart d-flex justify-content-center align-items-center" id="add-cart">
                                 <i class="fa-solid fa-cart-shopping"></i>
-                                <p>Añadir al carrito</p>
+                                <p class="d-none d-md-block d-lg-block">Añadir al carrito</p>
+                                <p class="d-block d-md-none d-lg-none">Añadir</p>
                             </button>
                         </div>
                     </div>
@@ -74,10 +75,10 @@
             </article>
         </section>
     </main>
-    <footer class="footer-home container d-flex flex-column justify-content-center align-items-center">
-        <div class="services d-flex justify-content-center align-items-center gap-5">
+    <footer class="footer-home container-fluid d-flex flex-column justify-content-center align-items-center">
+        <div class="services d-flex justify-content-center align-items-center row">
             <!-- ENVIOS -->
-            <div class="message d-flex justify-content-center align-items-center gap-4 barrer">
+            <div class="message d-flex justify-content-center align-items-center gap-4 d-none d-md-flex col-md-4">
                 <i class="fa-solid fa-truck fs-1 icon"></i>
                 <div class="text">
                     <h4 class="m-0">ENVIAMOS TU COMPRA</h4>
@@ -85,7 +86,7 @@
                 </div>
             </div>
             <!-- PAGA COMO QUIERAS -->
-            <div class="message d-flex justify-content-center align-items-center gap-4 barrer">
+            <div class="message d-flex justify-content-center align-items-center gap-4 d-none d-md-flex col-md-4">
                 <i class="fa-solid fa-credit-card fs-1 icon"></i>
                 <div class="text">
                     <h4 class="m-0">PAGÁ COMO QUIERAS</h4>
@@ -93,16 +94,16 @@
                 </div>
             </div>
             <!-- SEGURIDAD -->
-            <div class="message last d-flex justify-content-center align-items-center gap-4">
+            <div class="message last d-flex justify-content-center align-items-center gap-4 d-none d-md-flex col-md-4">
                 <i class="fa-solid fa-lock fs-1 icon"></i>
                 <div class="text">
                     <h4 class="m-0">COMPRÁ CON SEGURIDAD</h4>
-                    <p class="m-0">Tus datos siempre estarán protegidos</p>
+                    <p class="m-0">Tus datos están protegidos</p>
                 </div>
             </div>
         </div>
 
-        <div class="copyright">Copyright @juanpabloovaldez | Todos los derechos reservados | Defensa al consumidor <a href="https://autogestion.produccion.gob.ar/consumidores/home" target="_blank">AQUÍ</a></div>
+        <div class="copyright text-center">Copyright @juanpabloovaldez | Todos los derechos reservados | Defensa al consumidor <a href="https://autogestion.produccion.gob.ar/consumidores/home" target="_blank">AQUÍ</a></div>
     </footer>
     <!-- MAIN SCRIPT -->
     <script src="js/main.js"></script>

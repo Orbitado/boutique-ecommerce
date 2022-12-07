@@ -1,5 +1,5 @@
 .main-home {
-    min-height: 82vh;
+    min-height: 77vh;
     .featured {
         .featured__img {
             .tshirt {
@@ -87,12 +87,6 @@
                     color: map-get($color, "secondary" );
                 }
             }
-        }
-        .message:not(.last):after {
-            display: block;
-            content: "";
-            border: 1px solid map-get($color, "secondary" );
-            height: 30px;
         }
     }
     .copyright {
