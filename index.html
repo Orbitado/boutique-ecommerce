@@ -16,30 +16,38 @@
 <body>
     <!-- NAVBAR -->
     <header class="header-nav">
-        <nav class="nav-general container">
-            <ul class="d-flex justify-content-between flex-wrap align-items-center p-0">
-                <li class="logo">
-                    <a class="logo" href="index.html">La Boutique de la T</a>
-                </li>
-                <li class="nav-item">
-                    <a class="active" href="#">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#">Productos</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#">Acerca de Nosotros</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#">Contacto</a>
-                </li>
-                <li class="nav-item cart" id="cart">
-                    <a class="cart" href="#"><i class="fa-solid fa-cart-shopping"></i><p class="cart-value" id="cart-value">0</p></a>
-                </li>
-                <button class="toggle" id="nav-toggle">
-                        <i class="fa-solid fa-bars"></i>
-                </button>
-            </ul>
+        <nav>
+            <div class="container">
+                <!-- LOGO -->
+                <div class="container-logo">
+                    <a href="index.html">
+                        <h2>La Boutique de la T</h2>
+                    </a>
+                </div>
+                <!-- LINKS -->
+                <ul class="nav-links">
+                    <li class="item active">
+                        <a href="#">Inicio</a>
+                    </li>
+                    <li class="item">
+                        <a href="#">Productos</a>
+                    </li>
+                    <li class="item">
+                        <a href="#">Acerca de</a>
+                    </li>
+                    <li class="item">
+                        <a href="#">Contacto</a>
+                    </li>
+                </ul>
+                <!-- BUTTON -->
+                <div class="toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <!-- BUTTON HIDDEN -->
+                <div class="hidden">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+            </div>
         </nav>
     </header>
     <!-- MAIN SECTION -->

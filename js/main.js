@@ -1,13 +1,3 @@
-// NAVBAR
-const navToggle = document.querySelector(".toggle");
-const innerWidth = parseInt(window.innerWidth);
-
-if (innerWidth < 997) {
-    navToggle.classList.toggle("active");
-} else {
-    navToggle.classList.remove("active")
-}
-
 // BUTTON COUNTER
 const restar = document.getElementById("rest");
 const sumar = document.getElementById("plus");

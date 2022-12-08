@@ -1,82 +1,79 @@
-.header-nav {
-    a {
-        text-decoration: none;
-        color: map-get($color, "secondary");
-        font-size: map-get($f-size, "descriptions");
-    }
-    li {
-        list-style: none; 
-        padding: 15px 20px 0 0px;
-    }
-    .nav-general {
-        &::after {
-            display: block;
-            content: "";
-            border: .1px solid map-get($color, "gray" );
+nav {
+    background: map-get($color, "gray");
+    height: 80px;
+    position: relative;
+    .container {
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        max-width: 1000px;
+        line-height: 80px;
+        z-index: 100;
+        // LOGO
+        .container-logo {
+            margin-left: 20px;
+            z-index: 100;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80px;
+            a {
+                text-decoration: none;
+                h2 {
+                    color: map-get($color, "primary");
+                    font-weight: bold;
+                    font-size: map-get($f-size, "heading");
+                    margin: 0px;
+                }
+            }  
         }
-        ul {
-            .logo {
-                font-size: map-get($f-size, "heading" );
-                font-weight: 900;
-                color: map-get($color, "primary");
-            }
-            // ELEMENTO DE JS
-            .toggle {
-                background: none;
-                border: none;
-                color: map-get($color, "primary");
-                font-size: map-get($f-size, "heading");
-
-                display: none;
-            }
-
-            .toggle.active {
-                background: none;
-                border: none;
-                color: map-get($color, "primary");
-                font-size: map-get($f-size, "heading");
-                padding-top: 15px;
-
-                display:block;
-            }
-
-            .nav-item {
+        // LINKS
+        .nav-links {
+            .item {
+                display: inline-block;
+                list-style-type: none;
+                transition: .3s;
+                &:hover {
+                    transform: scale(1.1);
+                }
                 a {
+                    font-size: 16px;
+                    margin: 0 25px;
                     text-decoration: none;
                     color: map-get($color, "secondary");
-                    font-size: map-get($f-size, "descriptions");
-                }
-                .cart {
-                    color: map-get($color, "primary" );
-                    font-size: map-get($f-size, "heading" );
-                    position: relative;
-                    .cart-value {
-                        position: absolute;
-                        top: 30%;
-                        left: 60%;
-                        font-size: 16px;
-                        background-color: map-get($color, "black");
-                        border: 1px solid transparent;
-                        border-radius: 5rem;
-                        margin: 0px;
-                        padding: 2px;
-                    }
+                    transition: .3s;
                 }
             }
-            .nav-item .active {
+            .active {
+                a {
                     color: map-get($color, "black");
-                    font-weight: 600;
-            }
-            // ELEMENTO DE JS
-            .nav-item .inactive {
-                display: none;
-            }
-
-            .nav-item .active::after {
-                display: block;
-                content: "";
-                border: 1px solid map-get($color, "primary");
+                    font-weight: bold;
+                }
+                &::after {
+                    content: "";
+                    display: block;
+                    border: 2px solid map-get($color, "primary");
+                }
+                &:hover {
+                    transform: scale(1);
+                }
             }
         }
+        // BUTTONS
+        .toggle {
+            color: map-get($color, "primary");
+            margin-right: 20px;
+            font-size: map-get($f-size, "heading");
+            cursor: pointer;
+            transition: .3s ease-in-out;
+            display: none;
+            
+            @include mv(992px) {
+                display: inline-block;
+            }
+        }
+        
+        .hidden {}
     }
-}
+    }
