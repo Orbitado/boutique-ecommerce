@@ -1,5 +1,3 @@
-// NAVBAR
-
 // BUTTON COUNTER
 const restar = document.getElementById("rest");
 const sumar = document.getElementById("plus");
@@ -8,6 +6,14 @@ const value = document.getElementById("value");
 const cartValue = document.getElementById("cart-value");
 // CARRITO
 const cart = document.getElementById("cart");
+// PRODUCTOS
+const productos = [
+    "Remera", 
+    "Pantalón", 
+    "Campera", 
+    "Buzo"
+];
+const compra = [];
 
 let numero = 0;
 
@@ -29,14 +35,12 @@ addCart.addEventListener("click", ()=>{
     cartValue.innerHTML = numero;
     for (let i = 0; i < 3; i++) {
         if (i < 1) {
-            let nombre = prompt("Por favor, ingresa tu nombre");
+            let nombre = prompt("Estos son los productos disponibles: ");
             console.log(nombre);
         } else if (i < 2) {
             let compra = prompt("¿Qué quieres comprar?");
-            console.log("compra");
         } else if (i < 3) {
             let confirmacion = confirm("¿Deseas añadir esta cantidad al carrito?");
-
         }
     }
 });
