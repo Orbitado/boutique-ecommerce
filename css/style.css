@@ -40,9 +40,14 @@
   display: block;
 }
 .header-nav .nav-general ul .nav-item a {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   text-decoration: none;
   color: #707070;
   font-size: 16px;
+}
+.header-nav .nav-general ul .nav-item a:hover:not(.active, .cart) {
+  font-size: 17px;
 }
 .header-nav .nav-general ul .nav-item .cart {
   color: #FF4500;
@@ -108,7 +113,7 @@
   color: #FF4500;
 }
 .main-home .featured .featured__description .description .button-content .amount #value {
-  margin: 0;
+  margin: 0px;
   color: #373737;
   font-weight: bold;
 }
@@ -141,4 +146,8 @@
   margin-top: 10px;
   color: #707070;
   font-size: 12px;
+}
+
+.mainProductos {
+  height: 80vh;
 }

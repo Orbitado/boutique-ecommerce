@@ -42,9 +42,13 @@
 
             .nav-item {
                 a {
+                    transition: .2s;
                     text-decoration: none;
                     color: map-get($color, "secondary");
                     font-size: map-get($f-size, "descriptions");
+                    &:hover:not(.active, .cart) {
+                        font-size: calc(map-get($f-size, "descriptions") + 1px);
+                    }
                 }
                 .cart {
                     color: map-get($color, "primary" );
