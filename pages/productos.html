@@ -45,47 +45,15 @@
     <!-- PAGE -->
     <main class="mainProductos container d-flex justify-content-center align-items-center">
         <section class="sectionProductos">
-            <div class="cards d-flex flex-wrap justify-content-center align-items-center gap-5 row">
-                <!-- FIRST CARD -->
-                <div class="card col-lg-6" style="width: 18rem;">
-                    <img src="../assets/tshirt.jpg" class="card-img-top" alt="Remera">
-                    <div class="card-body">
-                      <h5 class="card-title">Remera</h5>
-                      <p class="card-text">$2.500</p>
-                      <a href="#" class="btn btn-primary">Añadir al carrito</a>
-                    </div>
-                </div>
-                <!-- SECOND CARD -->
-                <div class="card col-lg-6" style="width: 18rem;">
-                    <img src="../assets/pants.png" class="card-img-top" alt="Pantalón">
-                    <div class="card-body">
-                      <h5 class="card-title">Pantalón</h5>
-                      <p class="card-text">$4.000</p>
-                      <a href="#" class="btn btn-primary">Añadir al carrito</a>
-                    </div>
-                </div>
-                <!-- THIRTH CARD -->
-                <div class="card col-lg-6" style="width: 18rem;">
-                    <img src="../assets/campera.png" class="card-img-top" alt="Campera">
-                    <div class="card-body">
-                      <h5 class="card-title">Campera</h5>
-                      <p class="card-text">$5.000</p>
-                      <a href="#" class="btn btn-primary">Añadir al carrito</a>
-                    </div>
-                </div>
-                <!-- FOURTH CARD -->
-                <div class="card col-lg-6" style="width: 18rem;">
-                    <img src="../assets/tshirt.jpg" class="card-img-top" alt="Remera">
-                    <div class="card-body">
-                      <h5 class="card-title">Remera</h5>
-                      <p class="card-text">$2.500</p>
-                      <a href="#" class="btn btn-primary">Añadir al carrito</a>
-                    </div>
-                </div>
+            <div id="cardContainer" class="cards d-flex flex-wrap justify-content-center align-items-center gap-5 row">
+                <div class="contenedor"></div>
+            </div>
         </section>
+        <div class="modal">
+            <div class="modal-body" id="modal-body"></div>
+        </div>
     </main>
     <!-- MAIN SCRIPT -->
-    <script src="js/main.js"></script>
-    <script src="js/nav.js"></script>
+    <script src="../js/productos.js"></script>
 </body>
 </html>
