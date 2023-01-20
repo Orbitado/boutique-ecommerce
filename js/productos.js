@@ -44,7 +44,7 @@ stockProductos.forEach((prod) => {
     <div class="card-body">
             <h5 class="card-title">${nombre}</h5>
             <p class="card-text">${desc}</p>
-            <p class="card-text">${precio}</p>
+            <p class="card-text">$${precio}</p>
             <button onclick="agregarProducto(${id})" class="btn btn-danger">Añadir al carrito</button>
             </div>
             </div>
@@ -56,13 +56,26 @@ function agregarProducto(id) {
     carrito.push(item);
     console.log(id)
     mostrarCarrito();
+    localStorage.setItem("Carrito", JSON.stringify(carrito))
 }
 
 let numero = 0;
+const cartValue = document.getElementById("cart-value");
 function mostrarCarrito() {
-    const cartValue = document.getElementById("cart-value");
     numero++;
     cartValue.innerHTML = numero;
 }
 
-const cartStorage = localStorage.setItem("Carrito", carrito);
+const cart = document.getElementById("cart")
+cart.addEventListener("click", ()=> {
+    let decision = confirm("¿Desea eliminar sus elementos en el carrito?")
+    if (decision) {
+       eliminarCarrito(); 
+    }
+});
+
+function eliminarCarrito(){
+    numero = 0;
+    cartValue.innerHTML = numero;
+    localStorage.removeItem("Carrito");
+}
