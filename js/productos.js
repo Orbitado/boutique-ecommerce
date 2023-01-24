@@ -63,19 +63,27 @@ let numero = 0;
 const cartValue = document.getElementById("cart-value");
 function mostrarCarrito() {
     numero++;
+    localStorage.setItem("Numero", numero);
     cartValue.innerHTML = numero;
 }
 
-const cart = document.getElementById("cart")
-cart.addEventListener("click", ()=> {
-    let decision = confirm("¿Desea eliminar sus elementos en el carrito?")
-    if (decision) {
-       eliminarCarrito(); 
-    }
-});
+// CART
+const pedirProductos = () => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(stockProductos);
+        }, 2000);
+    })
+}
 
-function eliminarCarrito(){
-    numero = 0;
-    cartValue.innerHTML = numero;
-    localStorage.removeItem("Carrito");
+let producto = localStorage.getItem("Carrito");
+
+function mostrarProductos(array) {
+    array.forEach(item => {
+        const li = document.querySelector("#lista-productos");
+        li.id = item.id;
+        li.textContent = `
+        
+        `
+    });
 }
