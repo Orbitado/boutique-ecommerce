@@ -1,11 +1,22 @@
 main {
     section {
-        h2 {
-        }
-        ul {
-            li {
-                
+        #listContainer {
+            .productContainer {
+                background-color: rgb(227, 227, 227);
+                #cartProductImage {
+                    width: 150px;
+                }
+                #cartProductRemove {
+                    font-size: map-get($f-size, "heading");
+                    cursor: pointer;
+                }
             }
+        }
+    }
+    article {
+        .purchase {
+            background-color: map-get($color, "primary");
+            color: map-get($color, "white");
         }
     }
 }

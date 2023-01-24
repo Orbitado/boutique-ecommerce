@@ -151,3 +151,18 @@
 .mainProductos {
   height: 80vh;
 }
+
+main section #listContainer .productContainer {
+  background-color: rgb(227, 227, 227);
+}
+main section #listContainer .productContainer #cartProductImage {
+  width: 150px;
+}
+main section #listContainer .productContainer #cartProductRemove {
+  font-size: 28px;
+  cursor: pointer;
+}
+main article .purchase {
+  background-color: #FF4500;
+  color: #FFFFFF;
+}

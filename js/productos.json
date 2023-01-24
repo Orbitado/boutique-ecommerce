@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "nombre": "Remera",
+        "desc": "Remera negra lisa básica",
+        "cantidad": 1,
+        "precio": 1200,
+        "img": "../assets/tshirt.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Pantalón",
+        "desc": "Pantalón negro básico",
+        "cantidad": 1,
+        "precio": 1500,
+        "img": "../assets/pants.png"
+    },
+    {
+        "id": 3,
+        "nombre": "Campera",
+        "desc": "Campera negra básica",
+        "cantidad": 1,
+        "precio": 1700,
+        "img": "../assets/campera.png"
+    },
+    {
+        "id": 4,
+        "nombre": "Buzo",
+        "desc": "Buzo sin estampa básico",
+        "cantidad": 1,
+        "precio": 1700,
+        "img": "../assets/buzo.webp"
+    }
+]

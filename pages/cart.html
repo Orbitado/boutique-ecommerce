@@ -27,15 +27,9 @@
                 <li class="nav-item">
                     <a href="../pages/productos.html">Productos</a>
                 </li>
-                <li class="nav-item">
-                    <a href="#">Contacto</a>
-                </li>
                 <li class="nav-item cart" id="cart">
-                    <a class="cart" href="../pages/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a class="cart" href="#" id="cleanCart"><i class="fa-solid fa-cart-shopping"></i><p class="cart-value" id="cart-value">0</p></a>
                 </li>
-                <button class="toggle" id="nav-toggle">
-                        <i class="fa-solid fa-bars"></i>
-                </button>
             </ul>
         </nav>
     </header>
@@ -44,12 +38,23 @@
         <section>
             <h2 class="text-center mt-5 fw-bold">Listado de Productos</h2>
             <!-- CART -->
-            <ul id="lista-productos">
-                <!-- Contenido completado con JS en cart.js -->
-            </ul>
+            <div class="container" id="listContainer">
+                
+            <!-- RELLENO JS -->
+            <!-- RELLENO JS -->
+
+            </div>
         </section>
+        <article class="container">
+            <button class="purchase btn-primary mt-3 p-2 rounded-2 float-end" id="purchaseItems">Comprar</button>
+        </article>
     </main>
     <!-- SCRIPTS -->
     <script src="../js/productos.js"></script>
+    <script src="../js/cart.js"></script>
+    <!-- TOASTIFY -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- SWEET ALERT -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
